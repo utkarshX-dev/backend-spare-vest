@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 // app.use('/api/auth', require('./routes/auth.routes'));
 // app.use('/api/content', require('./routes/content.routes'));
 // app.use('/api/jobs', require('./routes/jobs.routes'));
-// app.use('/api/contact', require('./routes/contact.routes'));
+app.use('/api/contact', require('./routes/contact.routes'));
 app.use('/api/dashboard', require('./routes/dashboard.routes'));
 // app.use('/api/user', require('./routes/user.routes'));
 // app.use('/api/wallet', require('./routes/wallet.routes'));
