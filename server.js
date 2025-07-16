@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 });
 // app.use('/api/auth', require('./routes/auth.routes'));
 // app.use('/api/content', require('./routes/content.routes'));
-// app.use('/api/jobs', require('./routes/jobs.routes'));
+app.use('/api/careers', require('./routes/careers.routes'));
 app.use('/api/contact', require('./routes/contact.routes'));
 app.use('/api/dashboard', require('./routes/dashboard.routes'));
 // app.use('/api/user', require('./routes/user.routes'));
@@ -30,7 +30,6 @@ app.use('/api/dashboard', require('./routes/dashboard.routes'));
 // app.use('/api/markets', require('./routes/markets.routes'));
 // app.use('/api/learning', require('./routes/learning.routes'));
 // app.use('/api/chatbot', require('./routes/chatbot.routes'));
-
 
 app.listen(3001, () => {
   console.log("Server is running on port 3001");
